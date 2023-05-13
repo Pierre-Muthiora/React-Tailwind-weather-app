@@ -64,13 +64,13 @@ function App() {
           <div className="relative mt-6 w-72 h-48 mx-auto rounded-lg ">
             <div
               id="temp"
-              className="text-9xl font-bold -tracking-widest text-white bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-600"
+              className="text-9xl font-bold -tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-600"
             >
               {data.main ? <h1>{data.main.temp.toFixed()} °C</h1> : null}
             </div>
             <div id="description">
               {data.weather ? (
-                <p className="absolute w-28 bottom-0 right-0 font-bold text-gray-600 text-2xl">
+                <p className="absolute w-28 bottom-0 right-0 font-bold text-gray-500 sm:text-2xl">
                   {data.weather[0].description}
                 </p>
               ) : null}
