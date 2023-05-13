@@ -70,7 +70,7 @@ function App() {
             </div>
             <div id="description">
               {data.weather ? (
-                <p className="absolute w-28 bottom-0 right-0 font-bold text-gray-500 sm:text-2xl">
+                <p className="absolute w-28 bottom-0 right-0 font-bold text-gray-500 text-lg sm:text-2xl">
                   {data.weather[0].description}
                 </p>
               ) : null}
