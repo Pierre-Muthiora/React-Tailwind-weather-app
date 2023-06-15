@@ -66,7 +66,7 @@ function App() {
               id="temp"
               className="text-9xl font-bold -tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-600"
             >
-              {data.main ? <h1>{data.main.temp.toFixed()} °C</h1> : null}
+              {data.main ? <h1>{data?.main.temp.toFixed()} °C</h1> : null}
             </div>
             <div id="description">
               {data.weather ? (
@@ -77,7 +77,7 @@ function App() {
               {data.weather ? (
                 <img
                   className="absolute -bottom-[70px] -left-[70px] w-60 h-60"
-                  src={`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`}
+                  src={`https://openweathermap.org/img/wn/${data?.weather[0].icon}.png`}
                   alt=""
                 />
               ) : null}
